@@ -184,3 +184,131 @@ using namespace std;
 
 // =======================================================
 
+// ! Pair Sum
+
+// int main(){
+//     int n;
+//     cout<<"Enter array size : "<<endl;
+//     cin>>n;
+
+//     vector<int>arr(n);
+//     cout<<"Enter array value : "<<endl;
+//     for(int i=0; i<n; i++){
+//         cin>>arr[i];
+//     }
+
+//     cout<<"You Enter value is : ";
+//     for(int i=0; i<n; i++){
+//         cout<<arr[i]<<" ";
+//     }
+//     cout<<endl;
+
+//     int sum;
+//     cout<<"Enter Pair sum you want : ";
+//     cin>>sum;
+
+//     bool found;
+//     for(int i=0; i<arr.size(); i++){
+//         int element = arr[i];
+//         for(int j=i+1; j<arr.size(); j++){
+//             if(element+arr[j]==sum){
+//                 cout<<"Found Pair Sum Is : "<<element<<" "<<arr[j]<<endl;
+//                 found = true;
+//             }
+//         }
+//     }
+//     if(found == true){
+//         cout<<"Pair is found ! "<<endl;
+//     }else{
+//         cout<<"Not Found Pair Sum ! "<<endl;
+//     }
+
+// }
+
+// Output : 
+// Enter array size :  
+// 5
+// Enter array value : 
+// 10
+// 20
+// 40
+// 60
+// 70
+// You Enter value is : 10 20 40 60 70 
+// Enter Pair sum you want : 80
+// Found Pair Sum Is : 10 70
+// Found Pair Sum Is : 20 60
+// Pair is found ! 
+
+// Enter array size : 
+// 5
+// Enter array value : 
+// 45
+// 54
+// 62
+// 85
+// 45
+// You Enter value is : 45 54 62 85 45 
+// Enter Pair sum you want : 500
+// Not Found Pair Sum !
+
+// ==============================================================
+
+// !Triplet Sum
+
+// int main(){
+//     vector<int>arr{10,20,30,50,60,80,70,100};
+//     int sum = 140;
+
+//     for(int i=0; i<arr.size(); i++){
+//         int element = arr[i];
+//         for(int j=i+1; j<arr.size(); j++){
+//             int elementSec = arr[j];
+//             for(int k=j+1; k<arr.size(); k++){
+//                 if(element+elementSec+arr[k]==sum){
+//                     cout<<"Triplet Sum Is : "<<element<<" "<<elementSec<<" "<<arr[k]<<endl;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// Output =
+// Triplet Sum Is : 10 30 100
+// Triplet Sum Is : 10 50 80 
+// Triplet Sum Is : 10 60 70 
+// Triplet Sum Is : 20 50 70 
+// Triplet Sum Is : 30 50 60 
+
+// =====================================================================
+
+//! four sum 
+
+// int main(){
+//     vector<int>arr{40,50,60,45,80,60,75,90,70};
+//     int sum = 320;
+
+//     for(int i=0; i<arr.size(); i++){
+//         int element = arr[i];
+//         for(int j=0; j<arr.size(); j++){
+//             int elementSec = arr[j];
+//             for(int k=j+1; k<arr.size(); k++){
+//                 int elementThe = arr[k];
+//                 for(int l=k+1; l<arr.size(); l++){
+//                     if(element+elementSec+elementThe+arr[l]==sum)
+//                     cout<<"Four Sum Pair is : "<<element<<" "<<elementSec<<" "<<elementThe<<" "<<arr[l]<<endl;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// Output = 
+// Four Sum Pair is : 80 80 90 70        
+// Four Sum Pair is : 75 80 75 90        
+// Four Sum Pair is : 90 60 80 90        
+// Four Sum Pair is : 90 80 60 90 
+
+// =====================================================================================
+
+
