@@ -21,15 +21,25 @@ int Binary_Search(int arr[], int n, int Target_Key){
 
 }
 
+// int main(){
+//     int arr[10]={1,3,4,6,7,9};
+//     int n = 6;
+
+//     int Target_key = 7;
+//     int location = Binary_Search(arr,n,Target_key);
+
+//     cout<<"Target value is present at : "<<location<<" Location"<<endl;
+
+// }
+
 int main(){
-    int arr[10]={1,3,4,6,7,9};
-    int n = 6;
+    int arr[10]={2,6,8,9,10,12,14,16};
+    int n = 8;
+    int Target_Key = 8;
 
-    int Target_key = 7;
-    int location = Binary_Search(arr,n,Target_key);
-
-    cout<<"Target value is present at : "<<location<<" Location"<<endl;
-
+    int location = Binary_Search(arr,n,Target_Key);
+    cout<<"Target value is present at : "<<location<<" location "<<endl;
 }
 
 // Output = Target value is present at : 4 Location
+//          Target value is present at : 2 location 
