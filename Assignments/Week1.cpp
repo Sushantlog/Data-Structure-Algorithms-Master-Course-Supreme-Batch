@@ -92,3 +92,21 @@ using namespace std;
 
 // ============================================
 
+// find factorial of a number 
+
+// int main(){
+//     int n;
+//     cout<<"Enter number to find factorial : "<<endl;
+//     cin>>n;
+
+//     int fact = 1;
+//     for(int i=n; i>=1; i--){
+//         fact = fact * i;
+//     }
+//     cout<<"Factorial : "<<fact;
+// }
+
+// Output = 
+// Enter number to find factorial : 
+// 5
+// Factorial : 120
