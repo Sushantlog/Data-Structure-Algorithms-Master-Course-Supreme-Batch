@@ -110,3 +110,184 @@ using namespace std;
 // Enter number to find factorial : 
 // 5
 // Factorial : 120
+
+// ====================================================
+
+// check number is prime or not
+
+// int main(){
+//     int n;
+//     cout<<"Enter number check prime or not : "<<endl;
+//     cin>>n;
+
+//     int IsPrime = true;
+//     for(int i=2; i<n; i++){
+//         if(n%i == 0){
+//             IsPrime =false;
+//             break;
+//         }
+//     }
+
+//     if(IsPrime){
+//         cout<<"Number is prime !"<<endl;
+//     }
+//     else{
+//         cout<<"Number is not prime !"<<endl;
+//     }
+// }
+
+// Output = 
+// Enter number check prime or not : 
+// 5
+// Number is prime !
+
+// =========================================================
+
+// C++ Program to find Prime Numbers between given range
+
+// void findRange(int l, int r){
+//     int flag;
+//     for(int i=l; i<=r; i++){
+//         if(i==0 || i==1){
+//             continue;
+//         }
+//         flag = 1;
+//         for(int j=2; j<=i/2; j++){
+//             if(i%j == 0){
+//                 flag = 0;
+//                 break;
+//             }
+//         }
+//         if(flag == 1){
+//             cout<<i<<" ";
+//         }
+//     }
+// }
+
+// int main(){ 
+//     int l = 1;
+//     int r = 10;
+
+//     findRange(l,r);
+
+// }
+
+// Output = 2 3 5 7 
+
+// =====================================================
+
+// Check given triangle is valid or not 
+
+// int main(){
+//     int a,b,c;
+//     cout<<"enter Length of Three side of triangle : "<<endl;
+//     cin>>a>>b>>c;
+
+//     if((a+b)>c && (b+c)>a && (a+c)>b){
+//         cout<<"Triangle is valid "<<endl;
+//     }
+//     else{
+//         cout<<"Triangle is not valid "<<endl;
+//     }
+// }
+
+// Output = 
+
+// enter Length of Three side of triangle : 
+// 10
+// 20
+// 20
+// Triangle is valid 
+
+// enter Length of Three side of triangle : 
+// 1
+// 3
+// 0
+// Triangle is not valid 
+
+// ======================================================
+
+// Print only even number from 1 to N
+
+// int main(){
+//     int n;
+//     cout<<"Enter number : ";
+//     cin>>n;
+
+//     cout<<"Printing the even number : ";
+//     for(int i=2; i<=n; i+=2){
+//         cout<<i<<" ";
+//     }
+// }
+
+// Output = 
+// Enter number : 10
+// Printing the even number : 2 4 6 8 10 
+
+// =======================================
+
+// Print only odd number from 1 to N
+
+// int main(){
+//     int n;
+//     cout<<"Enter number : ";
+//     cin>>n;
+
+//     cout<<"Printing odd number : ";
+//     for(int i=1; i<=n; i+=2){
+//         cout<<i<<" ";
+//     }
+// }
+
+// Output =
+// Enter number : 10
+// Printing odd number : 1 3 5 7 9 
+
+// ============================================
+
+// print maximum of three number
+
+// int main(){
+//     int a,b,c;
+//     cout<<"Three number one by one : "<<endl;
+//     cin>>a>>b>>c;
+
+//     if(a>b){
+//         if(a>c){
+//             cout<<a<<" is grater"<<endl;
+//         }
+//         else{
+//             cout<<c<<" is grater"<<endl;
+//         }
+//     }
+//     else{
+//         if(b>c){
+//             cout<<b<<" is grater"<<endl;
+//         }
+//         else{
+//             cout<<c<<" is grater"<<endl;
+//         }
+//     }
+// }
+
+// Output =
+// Three number one by one : 
+// 12 
+// 25
+// 30
+// 30 is grater
+
+// Three number one by one : 
+// 75
+// 12
+// 54
+// 75 is grater
+
+// Three number one by one : 
+// 55
+// 85
+// 53
+// 85 is grater
+
+// ================================================
+
