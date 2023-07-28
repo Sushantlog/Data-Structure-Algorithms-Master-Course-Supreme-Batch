@@ -151,3 +151,56 @@ using namespace std;
 
 // =========================================================================
 
+// find the odd occurring element in an array  //!Important Question on Observation on index
+
+int Solve(vector<int>arr){
+    int start = 0; 
+    int end = arr.size()-1;
+    int mid = (start+(end-start)/2);
+
+    while(start<=end){
+        if(start == end){
+            return start;
+        }
+
+        if(mid%2==0){
+            if(arr[mid]==arr[mid+1]){
+                start = mid+2;
+            }
+            else if(arr[mid]!=arr[mid+1]){
+                end = mid;
+            }
+        }
+        else{
+            if(arr[mid]==arr[mid-1]){
+                start = mid+1;
+            }
+            else if(arr[mid-1]!=arr[mid]){
+                end = mid -1;
+            }
+        }
+        mid = (start+(end-start)/2);
+    }
+    return -1;
+}
+
+int main(){
+    // vector<int>arr{1,1,2,2,3,3,4,4,5,4,4,2,2};
+    vector<int>arr{1,1,2,2,3,3,4,4,5,5,6,6,7,7,1,1,2,2,3,100,100};
+
+
+    int OddOcc = Solve(arr);
+
+    cout<<"Present at Index : "<<OddOcc<<endl;
+    cout<<"Value Will be : "<<arr[OddOcc]<<endl;
+
+}
+
+// Output =
+// Present at Index : 8
+// Value Will be : 5
+
+// Present at Index : 18
+// Value Will be : 3
+
+// ==================================================
