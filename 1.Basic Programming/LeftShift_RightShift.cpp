@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// Right Shift <<
+// Right Shift <<   (this will basically use for shifting bit each shifted  bit will multiplication of 2)
 // int main(){
 //     int a=12;
 //     a = a << 1;
@@ -28,7 +28,7 @@ using namespace std;
 // 0
 
 
-// Left shift >>
+// Left shift >>    (this will basically use for shifting bit each shifted  bit will division of 2)
 int main(){
     int a = 12;
     a = a >> 1;

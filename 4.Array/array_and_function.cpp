@@ -23,9 +23,9 @@ int main(){
     cout<<"in main function print actual value : ";
     printArray(arr,size);
 }
+// print main functio
 
-// Output = 
-// print main function value : 10 20 23
+// Output = n value : 10 20 23
 // print increments value : 20 20 23
 // in main function print actual value : 20 20 23   
 
