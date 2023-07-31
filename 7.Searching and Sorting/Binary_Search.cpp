@@ -140,7 +140,7 @@ using namespace std;
 //     while (start <= end){
 //         if(arr[mid]==target){
 //             ans = mid;
-//             end = mid-1;
+//             end = mid-1; 
 //         }
 //         else if(arr[mid]>target){
 //             end = mid-1;
@@ -337,6 +337,7 @@ using namespace std;
 
 // =================================================
 
+// Leetcode 
 
 // class Solution {
 // public:
