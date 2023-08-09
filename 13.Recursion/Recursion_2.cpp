@@ -1,5 +1,6 @@
 #include<iostream>
 #include<limits.h>
+#include<vector>
 using namespace std;
 
 // Climbing Stair
@@ -213,30 +214,139 @@ using namespace std;
 
 // find total char index present in char   
 
-int checkIndex(string& str,int& n,int i, char& ch){
-    if(i>=n){
-        return 0;
-    }
-    if(str[i]==ch){
-        cout<<"Charater "<<ch<<" Found at Location : "<<i<<endl;
-    }
+// int checkIndex(string& str,int& n,int i, char& ch){
+//     if(i>=n){
+//         return 0;
+//     }
+//     if(str[i]==ch){
+//         cout<<"Charater "<<ch<<" Found at Location : "<<i<<endl;
+//     }
 
-    checkIndex(str,n,i+1,ch);
-}
+//     checkIndex(str,n,i+1,ch);
+// }
 
-int main(){
-    string str = "sushant";
-    int n = str.size();
+// int main(){
+//     string str = "sushant";
+//     int n = str.size();
 
-    char ch = 's';
+//     char ch = 's';
 
-    int i = 0;
+//     int i = 0;
 
-    checkIndex(str,n,i,ch);
-    return 0;
-}
+//     checkIndex(str,n,i,ch);
+//     return 0;
+// }
 
 // Charater s Found at Location : 0  
 // Charater s Found at Location : 2
 
 // ============================================================
+
+// int checkIndex(string& str,int& n,int i, char& ch,vector<int>& ans){
+//     if(i>=n){
+//         return 0;
+//     }
+//     if(str[i]==ch){
+//         ans.push_back(i);
+//     }
+
+//     checkIndex(str,n,i+1,ch,ans);
+// }
+
+// int main(){
+//     string str = "sushant";
+//     int n = str.size();
+
+//     char ch = 's';
+
+//     int i = 0;
+//     vector<int>ans;
+
+//     checkIndex(str,n,i,ch,ans);
+
+//     cout<<"Printing Answer is : "<<endl;
+//     for(auto val:ans){
+//         cout<<val<<" ";
+//     }
+//     return 0;
+// }
+
+// Printing Answer is : 
+// 0 2 
+
+// ==============================================================
+
+// Print Counting present char
+
+// int CheckCount(string& str,int i,int& n,char& key,int& count){
+//     if(i>=n){
+//         return -1;
+//     }
+//     if(str[i]==key){
+//         count++;
+//     }
+//     CheckCount(str,i+1,n,key,count);
+// }
+
+// int main(){
+//     string str ="lovebabber";
+//     int n = str.size();
+
+//     char key = 'b';
+//     int i = 0;
+//     int count = 0;
+
+//     CheckCount(str,i,n,key,count);
+//     cout<<"Count : "<<count<<endl;
+// }
+
+// Count : 3
+
+// ======================================================
+
+// print all digits of this number
+
+// int PrintDigits(int n){
+//     if(n==0){
+//         return 1;
+//     }
+//     int digit = n%10;
+//     cout<<digit<<" ";
+//     int newValueOfN = n/10;
+
+//     PrintDigits(newValueOfN);  //! Remember this because it is important
+// }
+
+// int main(){
+//     int n = 647;
+
+//     PrintDigits(n);
+
+//     return 0;
+// }
+
+// 7 4 6 
+
+// ============
+
+int PrintDigits(int n){
+    if(n==0){
+        return 1;
+    }
+
+    PrintDigits(n/10);  //! Remember this because it is important
+
+    int digit = n%10;
+    cout<<digit<<" ";
+
+}
+
+int main(){
+    int n = 647;
+
+    PrintDigits(n);
+
+    return 0;
+}
+
+// 6 4 7 
