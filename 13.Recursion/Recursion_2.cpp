@@ -58,25 +58,25 @@ using namespace std;
 
 // Change function
 
-int print(int arr[],int n, int i){
-    if(i>=n){
-        return 1;
-    }
+// int print(int arr[],int n, int i){
+//     if(i>=n){
+//         return 1;
+//     }
 
-    print(arr, n, i+1);
+//     print(arr, n, i+1);
 
-    cout<<arr[i]<<" ";
+//     cout<<arr[i]<<" ";
 
-}
+// }
 
-int main(){
-    int arr[5] = {10,20,30,40,50};
-    int n = 5;
-    int i=0;
+// int main(){
+//     int arr[5] = {10,20,30,40,50};
+//     int n = 5;
+//     int i=0;
     
-    print(arr,n,i);
-    return 0;
-}
+//     print(arr,n,i);
+//     return 0;
+// }
 
 // 50 40 30 20 10 
 
@@ -163,6 +163,38 @@ int main(){
 // 53
 // 40
 // Minimum Value is : 10
+
+// ==============
+
+findMin(int arr[],int n,int i,int& mini){
+    if(i>=n){
+        return 1;
+    }
+
+    if(arr[i]<mini){
+        mini = arr[i];
+    }
+
+    findMin(arr,n,i+1,mini);
+}
+
+int main(){
+    int n;
+    cout<<"Enter the size of array : "<<endl;
+    cin>>n;
+
+    int arr[100];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+
+    int i = 0;
+    int mini = INT_MAX;
+
+    findMin(arr,n,i,mini);
+    cout<<"Minimum number is : "<<mini<<endl;
+    return 0;
+}
 
 // =================================================================
 
