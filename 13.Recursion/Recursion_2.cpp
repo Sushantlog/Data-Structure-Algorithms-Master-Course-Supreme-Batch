@@ -56,6 +56,30 @@ using namespace std;
 
 // Output = 10 20 30 40 50 
 
+// Change function
+
+int print(int arr[],int n, int i){
+    if(i>=n){
+        return 1;
+    }
+
+    print(arr, n, i+1);
+
+    cout<<arr[i]<<" ";
+
+}
+
+int main(){
+    int arr[5] = {10,20,30,40,50};
+    int n = 5;
+    int i=0;
+    
+    print(arr,n,i);
+    return 0;
+}
+
+// 50 40 30 20 10 
+
 // =======================================================
 
 // find out maximum number in an array 
@@ -329,24 +353,24 @@ using namespace std;
 
 // ============
 
-int PrintDigits(int n){
-    if(n==0){
-        return 1;
-    }
+// int PrintDigits(int n){
+//     if(n==0){
+//         return 1;
+//     }
 
-    PrintDigits(n/10);  //! Remember this because it is important
+//     PrintDigits(n/10);  //! Remember this because it is important
 
-    int digit = n%10;
-    cout<<digit<<" ";
+//     int digit = n%10;
+//     cout<<digit<<" ";
 
-}
+// }
 
-int main(){
-    int n = 647;
+// int main(){
+//     int n = 647;
 
-    PrintDigits(n);
+//     PrintDigits(n);
 
-    return 0;
-}
+//     return 0;
+// }
 
 // 6 4 7 
