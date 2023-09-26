@@ -21,7 +21,7 @@ using namespace std;
 //     cout<<"fib value is :"<<fib<<" "<<n<<endl;
 // }
 
-// =======================================================
+// ======================================================= 
 
 // Printing Reverse count 8 to 1
 
@@ -99,23 +99,45 @@ using namespace std;
 // Answer 8
 // ==================================================================
 
-int Multi(int n){
-    if(n == 0){
-        return 2;
-    }
-    int ans = 1 * n;
-    ans = ans * Multi(n-1);
-    return ans;
+// int Multi(int n){
+//     if(n == 0){
+//         return 2;
+//     }
+//     int ans = 1 * n;
+//     ans = ans * Multi(n-1);
+//     return ans;
     
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int Multiplication = Multi(n);
+//     cout<<"Answer "<<Multiplication<<endl;
+// }
+
+// 5
+// Answer 240
+
+//finding factorial 
+
+int factorial(int n){
+    // base case
+    if(n == 1){
+        return 1;
+    }
+
+    int chotiproblem =factorial(n-1);
+    int badiproblem = n * chotiproblem ;
+    return badiproblem;
 }
 
 int main(){
     int n;
     cin>>n;
 
-    int Multiplication = Multi(n);
-    cout<<"Answer "<<Multiplication<<endl;
-}
+    int ans = factorial(n);
 
-// 5
-// Answer 240
+    cout<<"factorial is : "<<ans<<endl;
+}
