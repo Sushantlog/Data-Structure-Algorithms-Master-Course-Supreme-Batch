@@ -122,22 +122,83 @@ using namespace std;
 
 //finding factorial 
 
-int factorial(int n){
-    // base case
-    if(n == 1){
-        return 1;
+// int factorial(int n){
+//     // base case
+//     if(n == 1){
+//         return 1;
+//     }
+
+//     int chotiproblem =factorial(n-1);
+//     int badiproblem = n * chotiproblem ;
+//     return badiproblem;
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int ans = factorial(n);
+
+//     cout<<"factorial is : "<<ans<<endl;
+// }
+
+// ====================================================================
+
+// int factorial(int n){
+//     if(n==1){
+//         return 1;
+//     }
+
+//     int ans = n * factorial(n-1);
+//     return ans;
+// }
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     int ans = factorial(n);
+
+//     cout<<"Factorial is : "<<ans<<endl;
+
+// }
+
+// ================================================================
+
+// void PrintCounting(int n){
+//     if(n==0){
+//         return;
+//     }
+
+//     cout<<n<<" ";
+
+//     PrintCounting(n-1);
+// }
+
+
+// int main(){
+//     int n;
+//     cin>>n;
+
+//     PrintCounting(n);
+// }
+
+// =============================================================
+
+void PrintCounting(int n){
+    if(n==0){
+        return;
     }
 
-    int chotiproblem =factorial(n-1);
-    int badiproblem = n * chotiproblem ;
-    return badiproblem;
+    PrintCounting(n-1);
+
+    cout<<n<<" ";
+
 }
 
 int main(){
     int n;
     cin>>n;
 
-    int ans = factorial(n);
-
-    cout<<"factorial is : "<<ans<<endl;
+    PrintCounting(n);
 }
