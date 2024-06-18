@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// 1
+
 int main(){
     bool a= true;
     bool b=false;
@@ -19,4 +21,8 @@ int main(){
     cout<<~(~b)<<endl;     // 0 
     cout<<(a^b)<<endl;     // 1
     cout<<(c^d)<<endl;     // 0
+
+    bool aa= true;
+    cout<<(~aa)<<endl;
+    cout<<~(aa)<<endl;
 }

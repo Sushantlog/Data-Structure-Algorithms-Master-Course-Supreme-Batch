@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+// 2
+
 // Right Shift <<   (this will basically use for shifting bit each shifted  bit will multiplication of 2)
 // int main(){
 //     int a=12;
@@ -13,8 +15,8 @@ using namespace std;
 //     c = c << 3;
 //     cout<<c<<endl;
 //     int d=12;
-//     d = d << -1;        //output = 0  warnings
-//     cout<<d<<endl;
+//     d = d << -1;        //output = 0  warnings  //showing grabage value
+//     cout<<d<<endl;      //if Right shift the value then it will be Multiply by 2   
 // }
 
 // Output =
@@ -39,6 +41,14 @@ int main(){
     int c = 12;
     c = c >> -1;
     cout<<c<<endl;
+
+    int aa = 8;
+    aa = aa >> 1;
+    cout<<aa<<endl;
+
+    int bb = 3;
+    bb = bb >> 1;
+    cout<<bb<<endl;       //if left shit the value then it will be divided by 2
 }
 
 // Output =
