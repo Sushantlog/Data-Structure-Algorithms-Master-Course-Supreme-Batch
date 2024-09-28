@@ -18,7 +18,7 @@ int main(){
     short c = 4;
     cout<<sizeof(c)<<endl;
 
-    char d = 5;
+    char d = 5; 
     cout<<sizeof(d)<<endl;
 
     bool e = 5;
@@ -39,7 +39,7 @@ int main(){
     // Type casting 
     // implicit type conversion
     char cha = 97;
-    cout<<cha<<endl;
+    cout<<"cha :"<<cha<<endl;
 
     int num = 'b';
     cout<< num << endl;
@@ -47,7 +47,7 @@ int main(){
     // explicit type conversion
     double da = 5.7;
 
-    int x = (int)d + 2;
+    int x = (int)da + 2;
     int y = da;
     cout<<"value of x is : "<< x <<endl;
     cout<<"value of y is : "<< y <<endl;

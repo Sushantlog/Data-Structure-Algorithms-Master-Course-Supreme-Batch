@@ -4,6 +4,7 @@ int main(){
     int a = 5;
     int b = 3;
 
+    // Arithmetic Operator
     cout<<a+b<<endl;
     cout<<a-b<<endl;
     cout<<a*b<<endl;
